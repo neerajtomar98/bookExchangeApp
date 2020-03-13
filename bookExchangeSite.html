@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>
+    Book Exchange Site
+</title>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bookExchangeSite.css" />
+</head>
+
+<body onLoad="onLoad()">
+    <div class="book-exchange-site">
+        <div class="user-header">
+            <div class="title">
+                <b>Book club</b>
+            </div>
+            <div class="login-container">
+                <input id="username" type="text" placeholder="enter name" class="user-name-input" />
+                <input type="button" class="submit-button" value="Submit" onclick="loginUser()" />
+
+            </div>
+
+        </div>
+        <div class="book-exchange-table-container">
+            <table class="books-table">
+                <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Author
+                        </th>
+                        <th>
+                            Lender
+                        </th>
+                        <th>
+                            Borrower
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="books-table-content" class="books-table-content">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="bookExchange.js">
+    </script>
+</body>
+
+</html>
